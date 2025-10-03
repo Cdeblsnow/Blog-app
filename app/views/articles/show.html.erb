@@ -7,5 +7,12 @@
 </ul>
 
 <ul>
+    <li> <%= link_to "Destroy",edit_article_path(@article, data: {
+                        turbo_method: :delete,
+                        turbo_confirm: "Are you sure?"
+                        }) %> </li>
+</ul>
+
+<ul>
     <li> <%= link_to "Home",root_path %> </li>
 </ul>
